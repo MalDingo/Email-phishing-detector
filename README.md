@@ -23,3 +23,32 @@ Highlights phishing risks directly in the email list
 Dynamic scanning using MutationObserver (new emails are checked automatically)
 
 Simple, fast, and privacy-friendly (all detection is done locally, no data leaves your browser)
+Project Structure
+mail-det/
+├── manifest.json      
+├── content.js        
+├── background.js     
+├── popup.html         
+├── icon16.png
+├── icon48.png
+└── icon128.png
+
+🚀 Installation
+
+Clone the repo:
+
+git clone https://github.com/MalDingo/Email-phishing-detector
+
+Open chrome://extensions/ in Chrome
+
+Enable Developer mode
+
+Click Load unpacked and select the project folder
+
+📌 Future Improvements
+
+🔍 Machine Learning–based detection of phishing content
+
+📊 Popup dashboard to display flagged emails
+
+🛡️ Integration with safe-browsing APIs to detect malicious links
