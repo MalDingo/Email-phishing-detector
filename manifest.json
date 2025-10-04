@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Email Analyzer",
+  "version": "1.0",
+  "description": "Detects phishing emails in opened Gmail messages without sign-in or data collection.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
